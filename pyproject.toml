@@ -1,0 +1,22 @@
+[project]
+name = "mocha"
+version = "0.1.0"
+description = "a text-to-speech application for mobi, pdf and epub files"
+authors = [
+    {name = "Tim",email = "135701310+timtagoe@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pypdf (>=5.3.1,<6.0.0)",
+    "mobi (>=0.3.3,<0.4.0)",
+    "ebooklib (>=0.18,<0.19)",
+    "beautifulsoup4 (>=4.13.3,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "mocha", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
