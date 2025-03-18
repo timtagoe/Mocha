@@ -1,5 +1,5 @@
 import os
-from log_handling import get_logger
+from file_handling.log_handling import get_logger
 
 log = get_logger()
 directory_name = 'Mocha'
@@ -40,5 +40,7 @@ def create_tmp_path_file():
     except Exception as e:
         log.error(f'An error occurred: {e}')
 
-create_tmp_directory()
-create_tmp_path_file()
+
+if __name__ == '__main__':
+    create_tmp_directory()
+    create_tmp_path_file()
