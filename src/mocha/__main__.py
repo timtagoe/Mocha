@@ -4,8 +4,7 @@ from file_handling.tmp_handling import create_tmp_directory, create_tmp_path_fil
 def main():
     # Set up logging
     setup_logging()
-
-    # Now you can call your functions
+    
     create_tmp_directory()
     create_tmp_path_file()
 
